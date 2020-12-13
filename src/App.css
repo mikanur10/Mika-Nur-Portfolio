@@ -1,0 +1,488 @@
+.App{
+  text-align: center;
+  background-image: linear-gradient(to top left, black, whitesmoke);
+  font-family: 'Montserrat', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+.title{
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 3em;
+  font-size: 3em;
+  color: rgb(149, 190, 230)
+  /* float: left; */
+}
+/* ////////Hero///////// */
+#home {
+  background-image: url("https://wallpaperaccess.com/full/1567666.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 45em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  opacity: .8;
+  background-color: #d8d8d8;
+}
+
+ #first, #second{
+  display: block;
+  width: 10%;
+  color:whitesmoke;
+  text-align: center;
+}
+
+#first{
+  display:table-cell;
+  font-size: 3.5em;
+  font-weight: bolder;
+  font-family: 'Montserrat', sans-serif;
+}
+#second{
+  display: inline;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* /////// Header //////*/
+#header {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  width: 100%;
+  height: 4em;
+  letter-spacing: 0.4em;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  float: left;
+}
+#header a{
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  width: 100%;
+  height: 2em;
+  color:black;
+  transition: .3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+#header a:hover{
+  color: rgb(9, 144, 174);
+  transition: .3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+
+/* //////Navbar/////// */
+#navbar a{
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  width: 100%;
+  height: 2em;
+  color:black;
+  transition: .3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+#navbar a:hover{
+  color: rgb(52, 194, 192);
+  transition: .3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+#name {
+  font-size: 2em;
+}
+/* /////////About//////// */
+#about{
+
+}
+
+.paragraph {
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
+  border-radius: 25px;
+  width: 80%;
+  margin: auto;
+  height: 225px;
+  padding: 100px;
+}
+
+#about h2{
+  text-decoration: none;
+  font-size: 40px;  
+}
+
+#about p{
+    font-weight: bold;
+    font-size: 25px;
+    /* border: 1px solid black; */
+    /* background-color: whitesmoke; */
+    opacity: 0.7;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+/* /////Skills/////// */
+#pic{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
+  /* background-color: rgb(240,240,240,.6); */
+  /* opacity: .7; */
+  width: 80%;
+  margin: auto;
+  border-radius: 25px;
+  /* z-index: 100%; */
+}
+
+#skills h2{
+text-decoration: none;
+}
+
+#skills p{
+font-size: 1em;
+/* margin-top: -100px; */
+
+}
+
+.lang {
+  width: 20%;
+  padding: 2em;
+  transition: all .6s ease-in-out;
+}
+
+.lang:hover{
+  transform: scale(1.5);
+  transition: all .6s ease-in-out;
+}
+/* ///////Project Cards///// */
+
+.container{
+  width: 70em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  /* grid-gap: 15px; */
+  margin: 0 auto;
+  height: 500px;
+}
+
+.container .card{
+  position: relative;
+  width: 350px;
+  height: 400px;
+  margin: 0 auto;
+  background: #fff;
+  transition: 0.5s;
+}
+
+#projects {
+  /* margin-top: -150px; */
+}
+
+.container .card:hover{
+  box-shadow: 0 30px 50px rgba(0,0,0,.2);
+}
+
+.container .card .face{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .card .face.face1{
+  box-sizing: border-box;
+  padding: 1em;
+  text-align: center;
+  background: #fff;
+  color: #013d4a;
+}
+
+.container .card .face.face1 h2{
+margin-top: 5em;
+}
+
+.container .card .face.face1 a{
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #013d4a;
+  border: 2px solid #013d4a;
+}
+
+.container .card .face.face1 a:hover{
+  color: #fff;
+  background: orange
+}
+
+.container .card .face.face2{
+  background:  #013d4a;
+  transition: 0.5s;
+}
+
+.container .card:hover .face.face2{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  top: 40px;
+  left: 55%;
+  transform: translateX(-80%);
+  background: transparent;
+  border: 2px solid #013d4a;
+}
+
+.container .card .face.face2 h2{
+  margin: 0;
+  padding: 0;
+  font-size: 3em;
+  color: white;
+  transition: 0.5s;
+}
+
+.container .card:hover .face.face2 h2{
+  color:black;
+  font-size: 2em;
+}
+
+#bg_1{
+  background-image: url("https://i.imgur.com/vvs2cGG.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#bg_2{
+  background-image: url("https://i.imgur.com/7sAXZ7x.png");
+  object-fit: contain;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#bg_3{
+  background-image: url("https://i.imgur.com/NRkWprw.png");
+  object-fit: contain;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#bg_4{
+  background-image: url("https://res.cloudinary.com/dvysqqdqe/image/upload/v1575828331/sony-playstation-game-genre-icons_ztmbad.png");
+  object-fit: contain;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#bg_5{
+  background-image: url("https://res.cloudinary.com/dvysqqdqe/image/upload/v1600537510/dayxp5y-ab62248e-522e-414c-94ae-9540c01f4082.png_ucikag.png");
+  object-fit: contain;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*////// Contact  //////*/
+input{
+  width: 55%;
+  padding: 12px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 25px;
+  background-color: rgba(255,255,255,0.5);
+  color: black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea{
+  width: 54%;
+  height: 15em;
+}
+
+input:hover { 
+transition: background-color 0.5 ease;
+background-color:white;
+}
+
+#contact{
+  text-align: center;
+}
+/* Footer */
+footer {
+  background:linear-gradient(to left, black, rgb(9, 144, 174));
+  display: flex;
+  justify-content: center;
+}
+
+footer h2{
+  color:whitesmoke;
+  transition: .3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+
+footer h2:hover{
+  color: rgb(9, 144, 174);
+  transition: .3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+
+.footer-icon {
+  width: 30px;
+  height: 30px;
+}
+/* GitHub & Linkedin Logos */
+
+footer img{
+  width: 3em;
+  height: 3em;
+  padding: 1em;
+  cursor: pointer;
+  transition: all .6s ease-in-out;
+}
+
+footer img:hover{
+  transform: scale(1.2);
+  transition: all .6s ease-in-out;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  #pic{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 0;
+    margin: 1em;
+    grid-gap: 2em;
+  }
+  #bg_1, #bg_2, #bg_3, #bg_4{
+    cursor: pointer;
+  }
+  #first{
+    font-size:1.8em;
+  }
+  #second{
+    font-size: 1.0em;
+  }
+
+  /* Hamburger Menu  */
+
+ #page-wrap {
+  text-align: center;
+
+  /* Prevent sidebar from showing a scrollbar on page */
+  overflow: auto;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  color: white;
+}
+
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background:linear-gradient(to bottom left, navy, whitesmoke);
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+#header{
+  display: none;
+  background: none;
+}
+}

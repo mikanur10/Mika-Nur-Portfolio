@@ -9,7 +9,7 @@ export default function Header() {
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
-      <a href="https://docs.google.com/document/d/1QH07Jxx0tcJMOAon6LZUC4oED85nLPek9CuLbNAOux4/edit?usp=sharing" target="_blank" rel="noopener noreferrer"> Resumé</a>
+      <a href="https://drive.google.com/file/d/1dZS_sXkrLoJkL_PB2onRZJu_wemDDBKp/view?usp=sharing" target="_blank" rel="noopener noreferrer"> Resumé</a>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 .App{
   text-align: center;
-  background-image: linear-gradient(to top left, black, whitesmoke);
+  background-image: linear-gradient(to top left, red, whitesmoke);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -14,7 +14,7 @@ html{
   font-weight: bold;
   margin-top: 3em;
   font-size: 3em;
-  color: rgb(149, 190, 230)
+  color: 00005a
   /* float: left; */
 }
 /* ////////Hero///////// */
